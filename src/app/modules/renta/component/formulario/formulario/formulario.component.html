@@ -1,0 +1,15 @@
+<div class="container m-4">
+    <div class="formulario">
+        <div class="title"><label><span>Ayúdanos</span> con unos datos más.</label></div>
+        <p>Porque te queremos dar una oferta hecha a la medida para ti, necesitamos saber un poco más.</p>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="form-group">
+                <label>¿Cuál es tu renta líquida/ingreso mensual?</label>
+                <input type="text" formControlName="renta" name="renta" class="form-control" placeholder="Ej: $400.000">
+            </div>
+            <div *ngIf="error" class="text-error">{{error}}</div>
+            <div *ngIf="message" class="text-success">{{message}}</div>
+            <button [disabled]="this.form.invalid || loading" type="submit" class="btn btn-block btn-success">CONTINUAR</button>
+        </form>
+    </div>
+</div>

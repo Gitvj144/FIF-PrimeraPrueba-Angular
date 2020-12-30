@@ -1,0 +1,60 @@
+.landing {
+    background-image: url("../../../../assets/bg-landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc( 100vh - 69px);
+}
+
+.landing .texto1 {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-top: 58px;
+    color: #ffffff;
+}
+
+.landing .texto1 strong {
+    font-weight: 700;
+}
+
+.landing .form {
+    margin-top: 81px;
+}
+
+.landing .logos {
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 5px 0 0 5px;
+    padding: 24px;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    left: 54px;
+    margin-right: -2rem;
+}
+
+@media screen and ( max-width: 767px) {
+    .landing {
+        background-image: url("../../../../assets/bg-landing.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: calc( 100vh - 444px);
+    }
+    .landing .form {
+        margin-top: -10px;
+    }
+    .landing .texto1 {
+        text-align: right;
+        line-height: 1.2;
+        font-size: 28px;
+        font-weight: 300;
+        margin-top: 60px;
+        padding-left: 40px;
+        padding-top: 58px;
+        margin-right: 10px;
+        color: #ffffff;
+    }
+}

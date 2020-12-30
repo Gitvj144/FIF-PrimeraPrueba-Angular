@@ -1,0 +1,20 @@
+.logo {
+    margin: 10px auto;
+    width: 10%;
+    height: 10%;
+}
+
+.navbar {
+    background-color: #f1efef;
+}
+
+@media screen and ( max-width: 767px) {
+    .logo {
+        margin: 10px auto;
+        width: 24%;
+        height: 10%;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}
