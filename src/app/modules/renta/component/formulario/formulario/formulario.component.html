@@ -5,7 +5,7 @@
         <form [formGroup]="form" (ngSubmit)="submit()">
             <div class="form-group">
                 <label>¿Cuál es tu renta líquida/ingreso mensual?</label>
-                <input type="text" formControlName="renta" name="renta" class="form-control" placeholder="Ej: $400.000">
+                <input type="number" formControlName="renta" name="renta" class="form-control" placeholder="Ej: $400.000">
             </div>
             <div *ngIf="error" class="text-error">{{error}}</div>
             <div *ngIf="message" class="text-success">{{message}}</div>
